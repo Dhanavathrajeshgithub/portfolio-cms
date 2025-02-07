@@ -12,7 +12,7 @@ app.use(cors());
 
 // Import Routes
 const projectRoutes = require("./routes/projectRoutes");
-app.use("/api/projects", projectRoutes); // ✅ Ensure this is correct
+app.use("/projects", projectRoutes); // ✅ Ensure this is correct
 
 app.get("/", (req, res) => {
   res.send("API is running...");
